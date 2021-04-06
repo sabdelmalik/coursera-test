@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function circle(){
+      console.log(this);
+    }
+
+    var x = new circle()
+    //circle();
+
+    function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+
+var max = new Dog("Max", "Buddy");
+max.bark();
+  </script>
+
+  <style>
+    body {
+  font-size: 50px;
+}
+a:hover div:nth-child(5) {
+  font-size: 24px;
+  background-color: yellow
+}
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <model-viewer role="img" aria-label="It's a donut" src="https://terabaud.github.io/blender-experimenting/leas-donut.glb" autorotate></model-viewer>
+
+  <div>Hello</div>
+  <span style="font-size: 3em;">World!</span>
+  <div>---</div>
+  <a>
+    <div id="">Div 1</div>
+    <div id="">Div 2</div>
+    <div id="">Div 3</div>
+    <div id="">Div 4</div>
+    <div id="">Div 5</div>
+    <div id="">Div 6</div>
+  </a>
+</body>
+</html>
